@@ -34,7 +34,10 @@ Add directory for the repo binary to its path
 
 Downloading repo binary and placing it in the proper directory
 
-    $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+    $ git clone git://aosp.tuna.tsinghua.edu.cn/android/git-repo.git/
+    
+
+    $ cp git-repo/repo ~/bin/ 
 
 Giving the repo binary the proper permissions
 
@@ -46,7 +49,7 @@ Creating directory for where the SudaMod repo will be stored and synced
 
 Initializing the SudaMod repo and downloading the manifest
 
-    $ repo init -u git://github.com/SudaMod/android.git -b sm-1.1
+    $ repo init -u git://github.com/lbule/SudaMod.git -b sm-1.1
 Then to sync up:
 
     $ repo sync --force-sync -j8
